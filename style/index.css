@@ -1,1 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End of Reset CSS */
 /* CSS stillerinizi buraya girin */
+.header-menu{
+    font-size: 30px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.header-menu a {
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 5%;
+}
+
+.header-menu a:hover{
+    background-color: chartreuse;
+}
+
+.isim {
+    font-size: 60px;
+    margin-left: 30px;
+    margin-top: -35px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 50px;
+  }
+
+.container img {
+    width:100%;
+  }
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: yellow;
+  }
+
+  .centered a {
+    font-size: 30px;
+    border: 1px solid;
+    padding: 5px 20px;
+  }
+
+  .centered a:hover {
+    background-color: aquamarine;
+  }
+
+  .body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  .body-container p{
+    margin-bottom: 30px;
+    margin-top: 15px;
+    text-align:center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 10px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #2980b9;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back h1 {
+    margin-top:25px;
+  }
+
+.footer-container {
+  display: flex wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(43,51,106,1) 25%, rgba(73,90,239,1) 37%, rgba(48,175,173,1) 49%, rgba(207,43,201,1) 62%, rgba(207,43,96,1) 84%);
+  padding: 20px;
+}
+.footer-container a {
+  border: 1px solid;
+  padding:10px;
+}
+.footer-container a:hover{
+  background-color: burlywood;
+}
+
+
